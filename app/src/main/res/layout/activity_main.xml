@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Botón RESET ALL -->
+    <Button
+        android:id="@+id/buttonResetAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="RESET ALL"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.6"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Primer contador (alineado con RESET ALL) -->
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonResetAll" /> <!-- Alineado con RESET ALL -->
+
+    <!-- Primer fila: Botón +1 y RESET -->
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintStart_toEndOf="@id/texto1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResetAll"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintStart_toEndOf="@id/boton1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResetAll"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Segundo contador (alineado con botón 1) -->
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/boton1"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Segunda fila: Botón +1 y RESET -->
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="+1"
+        app:layout_constraintStart_toEndOf="@id/texto2"
+        app:layout_constraintTop_toBottomOf="@+id/boton1"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintStart_toEndOf="@id/boton2"
+        app:layout_constraintTop_toBottomOf="@+id/boton1"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Tercer contador (alineado con botón 2) -->
+    <TextView
+        android:id="@+id/texto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/boton2"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Tercera fila: Botón +1 y RESET -->
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintStart_toEndOf="@id/texto3"
+        app:layout_constraintTop_toBottomOf="@+id/boton2"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintStart_toEndOf="@id/boton3"
+        app:layout_constraintTop_toBottomOf="@+id/boton2"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Cuarto contador (alineado con botón 3) -->
+    <TextView
+        android:id="@+id/texto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/boton3"
+        android:layout_marginStart="24dp"/>
+
+    <!-- Cuarta fila: Botón +1 y RESET -->
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintStart_toEndOf="@id/texto4"
+        app:layout_constraintTop_toBottomOf="@+id/boton3"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintStart_toEndOf="@id/boton4"
+        app:layout_constraintTop_toBottomOf="@+id/boton3"
+        app:layout_constraintWidth_percent="0.3"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Quinto contador (alineado con botón 4) -->
+    <TextView
+        android:id="@+id/texto5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/boton4"
+        android:layout_marginStart="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
